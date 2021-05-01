@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		DB113E442632C86500AB750C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB113E432632C86500AB750C /* AppDelegate.swift */; };
 		DB113E462632C86500AB750C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB113E452632C86500AB750C /* SceneDelegate.swift */; };
-		DB113E482632C86500AB750C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB113E472632C86500AB750C /* ViewController.swift */; };
 		DB113E4B2632C86500AB750C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB113E492632C86500AB750C /* Main.storyboard */; };
 		DB113E4D2632C86600AB750C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB113E4C2632C86600AB750C /* Assets.xcassets */; };
 		DB113E502632C86600AB750C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB113E4E2632C86600AB750C /* LaunchScreen.storyboard */; };
+		DB113E592632CD7000AB750C /* musicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB113E582632CD7000AB750C /* musicViewController.swift */; };
+		DB4E520826393C6000245F16 /* Marshmello - Here With Me.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB4E520726393C6000245F16 /* Marshmello - Here With Me.mp3 */; };
+		DB66B8632637F882007DA194 /* Ed Sheeran - South of the Border.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB66B8622637F882007DA194 /* Ed Sheeran - South of the Border.mp3 */; };
+		DB66B8662637F88B007DA194 /* Ed Sheeran - Galway Girl.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB66B8652637F88B007DA194 /* Ed Sheeran - Galway Girl.mp3 */; };
+		DBF22EEB263D17E0001C2A31 /* beautiful people.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBF22EEA263D17E0001C2A31 /* beautiful people.mp3 */; };
+		DBF22EEE263D17EB001C2A31 /* happier.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DBF22EED263D17EB001C2A31 /* happier.mp3 */; };
+		DBF22EF4263D1C68001C2A31 /* MybokehParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = DBF22EF3263D1C68001C2A31 /* MybokehParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB113E402632C86500AB750C /* music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = music.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB113E432632C86500AB750C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB113E452632C86500AB750C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB113E472632C86500AB750C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB113E4A2632C86500AB750C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB113E4C2632C86600AB750C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB113E4F2632C86600AB750C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB113E512632C86600AB750C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB113E582632CD7000AB750C /* musicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = musicViewController.swift; sourceTree = "<group>"; };
+		DB4E520726393C6000245F16 /* Marshmello - Here With Me.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Marshmello - Here With Me.mp3"; sourceTree = "<group>"; };
+		DB66B8622637F882007DA194 /* Ed Sheeran - South of the Border.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ed Sheeran - South of the Border.mp3"; sourceTree = "<group>"; };
+		DB66B8652637F88B007DA194 /* Ed Sheeran - Galway Girl.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Ed Sheeran - Galway Girl.mp3"; sourceTree = "<group>"; };
+		DBF22EEA263D17E0001C2A31 /* beautiful people.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "beautiful people.mp3"; sourceTree = "<group>"; };
+		DBF22EED263D17EB001C2A31 /* happier.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = happier.mp3; sourceTree = "<group>"; };
+		DBF22EF3263D1C68001C2A31 /* MybokehParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MybokehParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,15 @@
 		DB113E422632C86500AB750C /* music */ = {
 			isa = PBXGroup;
 			children = (
+				DB4E520726393C6000245F16 /* Marshmello - Here With Me.mp3 */,
+				DB66B8622637F882007DA194 /* Ed Sheeran - South of the Border.mp3 */,
+				DB66B8652637F88B007DA194 /* Ed Sheeran - Galway Girl.mp3 */,
+				DBF22EEA263D17E0001C2A31 /* beautiful people.mp3 */,
+				DBF22EED263D17EB001C2A31 /* happier.mp3 */,
 				DB113E432632C86500AB750C /* AppDelegate.swift */,
 				DB113E452632C86500AB750C /* SceneDelegate.swift */,
-				DB113E472632C86500AB750C /* ViewController.swift */,
+				DB113E582632CD7000AB750C /* musicViewController.swift */,
+				DBF22EF3263D1C68001C2A31 /* MybokehParticle.sks */,
 				DB113E492632C86500AB750C /* Main.storyboard */,
 				DB113E4C2632C86600AB750C /* Assets.xcassets */,
 				DB113E4E2632C86600AB750C /* LaunchScreen.storyboard */,
@@ -124,8 +142,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB66B8662637F88B007DA194 /* Ed Sheeran - Galway Girl.mp3 in Resources */,
+				DB66B8632637F882007DA194 /* Ed Sheeran - South of the Border.mp3 in Resources */,
+				DBF22EEE263D17EB001C2A31 /* happier.mp3 in Resources */,
 				DB113E502632C86600AB750C /* LaunchScreen.storyboard in Resources */,
 				DB113E4D2632C86600AB750C /* Assets.xcassets in Resources */,
+				DBF22EF4263D1C68001C2A31 /* MybokehParticle.sks in Resources */,
+				DB4E520826393C6000245F16 /* Marshmello - Here With Me.mp3 in Resources */,
+				DBF22EEB263D17E0001C2A31 /* beautiful people.mp3 in Resources */,
 				DB113E4B2632C86500AB750C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB113E482632C86500AB750C /* ViewController.swift in Sources */,
+				DB113E592632CD7000AB750C /* musicViewController.swift in Sources */,
 				DB113E442632C86500AB750C /* AppDelegate.swift in Sources */,
 				DB113E462632C86500AB750C /* SceneDelegate.swift in Sources */,
 			);

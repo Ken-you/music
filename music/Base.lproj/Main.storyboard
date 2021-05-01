@@ -1,24 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Music View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="musicViewController" customModule="music" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Fd-mD-1ug">
+                                <rect key="frame" x="20" y="109" width="374" height="359"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Db2-xd-rnO">
+                                <rect key="frame" x="182" y="647" width="50" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="play.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                                <connections>
+                                    <action selector="playMusicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLt-dz-ugI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q97-aP-0wH">
+                                <rect key="frame" x="300" y="647" width="55" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="forward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextMusicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wK-cZ-dAk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCN-UW-sC5">
+                                <rect key="frame" x="59" y="647" width="55" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="backward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousMusicBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEj-US-F6Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3e-Ys-nfL">
+                                <rect key="frame" x="352" y="611" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybW-dT-8tj">
+                                <rect key="frame" x="20" y="611" width="36" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-ql-Wi1">
+                                <rect key="frame" x="57" y="749" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <imageReference key="minimumValueImage" image="volume.1" catalog="system" symbolScale="medium"/>
+                                <imageReference key="maximumValueImage" image="volume.3" catalog="system" symbolScale="medium"/>
+                                <connections>
+                                    <action selector="volumeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hdk-BN-UuG"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="agE-E0-qZr">
+                                <rect key="frame" x="18" y="574" width="378" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGray5Color"/>
+                                <connections>
+                                    <action selector="musicChangeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dt5-31-8r8"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcP-wA-W66">
+                                <rect key="frame" x="122" y="476" width="170" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcF-Fe-s5z">
+                                <rect key="frame" x="59" y="800" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <state key="normal" image="shuffle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSw-SG-X7t">
+                                <rect key="frame" x="182" y="800" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <state key="normal" image="repeat" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPf-uS-6WK">
+                                <rect key="frame" x="307" y="800" width="48" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                <state key="normal" image="repeat.1" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxC-0C-bV1">
+                                <rect key="frame" x="342" y="514" width="52" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" image="sparkles" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopParticleBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fHn-Mk-k5F"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4Fd-mD-1ug" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="InO-ud-zDn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Fd-mD-1ug" secondAttribute="trailing" constant="20" id="WgY-b4-GIk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4Fd-mD-1ug" secondAttribute="bottom" constant="394" id="fQS-rn-a6r"/>
+                            <constraint firstItem="4Fd-mD-1ug" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="ztL-xW-JjU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="musicImageView" destination="4Fd-mD-1ug" id="Adg-4A-kwY"/>
+                        <outlet property="musicSlider" destination="agE-E0-qZr" id="0Ko-rA-GVk"/>
+                        <outlet property="musicplayButton" destination="Db2-xd-rnO" id="z7V-9O-3L9"/>
+                        <outlet property="nowtimeLabel" destination="ybW-dT-8tj" id="pWi-ql-M8d"/>
+                        <outlet property="particleButton" destination="JxC-0C-bV1" id="cOz-ZE-P6l"/>
+                        <outlet property="songNameLabel" destination="mcP-wA-W66" id="Q6L-bP-Y8c"/>
+                        <outlet property="totaltimeLabel" destination="X3e-Ys-nfL" id="pwu-11-cSq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="forward.fill" catalog="system" width="128" height="79"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="repeat" catalog="system" width="128" height="99"/>
+        <image name="repeat.1" catalog="system" width="128" height="99"/>
+        <image name="shuffle" catalog="system" width="128" height="93"/>
+        <image name="sparkles" catalog="system" width="112" height="128"/>
+        <image name="volume.1" catalog="system" width="128" height="108"/>
+        <image name="volume.3" catalog="system" width="128" height="86"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
